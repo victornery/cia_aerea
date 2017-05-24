@@ -4,23 +4,22 @@
 
 int main()
 {
-    int qnt_rotas;
-    char rota[100][100];
-    int i;
-    int tempo[100][100];
-    int numero[100][100];
+    int destinos, i;
 
+    printf("Sistema de companhia aerea - SIMPLIFICADO \n\n\n")
 
-    printf("Digite o numero de rotas: ");
-    scanf("%d", &qnt_rotas);
+    printf("Digite a quantidade de destinos: ");
+    scanf("%d", &destinos);
+
+    char rota[destinos][100];
 
     printf("___________CADASTRANDO ROTAS__________\n\n");
 
-    for(i=0;i<qnt_rotas;i++)
+    for(i=0;i<destinos;i++)
     {
-        printf("Rota: ");
-        gets(rota[i]);
+        printf("Destino %i: ",i);
         fflush(stdin);
+        gets(rota[i][0]);
     }
 
 
@@ -39,14 +38,7 @@ int main()
 
         printf("Numero do voo: ");
         scanf("%d", &numero[i][100]);
-
-        printf("__________PRESSIONE <N> PARA CONTINUAR CADASTRO\n\n");
-        printf("__________PRESSIONE <ENTER> PARA ENCERRAR CADASTRO\n\n");
     }
-
-
-
-
 
     return 0;
 }
