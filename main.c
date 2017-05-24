@@ -22,6 +22,9 @@ int main()
         gets(rota[i][0]);
     }
 
+    char cadastro[];
+    int duracao [destinos][5];
+    int n
 
     printf("__________________CADASTRANDO VIAGENS_________\n\n");
 
