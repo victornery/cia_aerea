@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1495980481 source:/Users/victornery/Desktop/trabalho_alg/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
