@@ -7,7 +7,7 @@ int main()
     int qDestinos, i,viz[10][10],dur[10][10],num[10][10],voo,duracao,k, j,dVoo;
     char destino[10][100], origem[100],dFinal[100];
 
-    // A vari‡vel K somente Ž utilizada para acrescentar representativamente +1 no cadastramento de rota
+    // A variável K somente é utilizada para acrescentar representativamente +1 no cadastramento de rota
 
     printf("Sistema de companhia aerea - SIMPLIFICADO \n\n\n");
 
