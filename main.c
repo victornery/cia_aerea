@@ -4,7 +4,7 @@
 
 int main()
 {
-    int qDestinos, i,viz[10][10],dur[10][10],num[10][10],voo,duracao,k, j,dVoo;
+    int qDestinos, i,viz[10][10],dur[10][10],num[10][10],voo,duracao,k, j,dVoo,oVoo;
     char destino[10][100], origem[100],dFinal[100];
 
     // A variável K somente é utilizada para acrescentar representativamente +1 no cadastramento de rota
@@ -37,7 +37,7 @@ int main()
         {
             if(origem == destino[i])
             {
-                voo=i;
+                oVoo=i;
             }
         }
 
@@ -58,8 +58,11 @@ int main()
         printf("Tempo do voo <minutos>: ");
         scanf("%d", &duracao);
 
+        dur[voo][dVoo] = duracao;
+
         printf("Numero do voo: ");
         scanf("%d", &voo);
+        num[voo][dVoo] = oVoo;
     }
 
     return 0;
